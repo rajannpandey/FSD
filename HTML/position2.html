@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property Tester</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding-bottom: 800px; /* Adds scroll space to test 'fixed' and 'sticky' */
+        }
+        
+        .container {
+            position: relative; /* Acts as the reference parent for absolute positioning */
+            border: 3px dashed #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+            height: 300px;
+            margin-bottom: 40px;
+        }
+
+        .box {
+            width: 120px;
+            height: 60px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .sibling {
+            background-color: #7f8c8d;
+            position: fixed; /* Default position for normal flow */
+        }
+
+        /* --- CHANGE THE VALUE BELOW TO TEST DIFFERENT POSITIONS --- */
+        .test-element {
+            background-color: #e74c3c;
+            
+            position: relative; /* Values: static | relative | absolute | fixed | sticky */
+            top: 20px;          /* Offset coordinates */
+            left: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Position Property Testing Page</h1>
+    <p>Modify the <code>.test-element</code> class in the style tag above to test different positioning methods.</p>
+
+    <div class="container">
+        <!-- Normal block element before our test item -->
+        <div class="box sibling">Normal Sibling 1</div>
+        
+        <!-- The element used to check the position property -->
+        <div class="box test-element">Test Element</div>
+        
+        <!-- Normal block element after our test item -->
+        <div class="box sibling">Normal Sibling 2</div>
+    </div>
+
+</body>
+</html>

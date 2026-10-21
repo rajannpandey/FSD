@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="data.php">
+        
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" placeholder="Enter your name"> <br>
+
+        <label for="password">Enter a password:</label>
+        <input type="password" id="password" placeholder="password"> <br> <br>
+
+        <label for="gender">Gender:</label>
+        
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">Other</label> <br> <br>
+
+        Enter your subjects:<br>
+        <input type="checkbox" name="subject" value="maths" id="maths">
+        <label for="maths">Maths</label><br>
+        <input type="checkbox" name="subject" value="python" id="python">
+        <label for="python">Python</label><br>
+        <input type="checkbox" name="subject" value="digital" id="digital">
+        <label for="digital">Digital</label><br> <br>
+
+        Select your city:<br>
+        <select name="city" id="city">
+            <option value="basti">Basti</option>
+            <option value="lucknow">Lucknow</option>
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="kolkata">Kolkata</option>
+        </select> <br> <br>
+        Feedback:<br>
+        <textarea name="feedback" id="feedback" placeholder="Enter your feedback" cols="30" rows="5"></textarea> <br>
+        <button>Submit</button> <br> <br> <hr>
+
+        Encloped knowledge:<br>
+        <iframe src="https://www.encyclopedia.com/" frameborder="0" height="315" width="560"></iframe> <br> <br> <hr>
+        
+        My favorite video:<br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vRjaGgDsWSo?si=3xHOjamSQ1zB8fm1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br> <br> <hr>
+
+        Video:<br>
+        <video src="r gkp video.MOV" controls height="315" width="560"></video>
+
+    </form>
+</body>
+</html>

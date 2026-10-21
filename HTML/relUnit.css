@@ -1,0 +1,77 @@
+/* ==========================================
+   Root Setup
+   ========================================== */
+html {
+    /* Most browsers default to 16px. 
+       All 'rem' units calculate their size based on this value. */
+    font-size: 16px; 
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* ==========================================
+   1. Viewport Units (vw / vh)
+   ========================================== */
+.hero-banner {
+    /* 40% of the viewport height */
+    height: 40vh; 
+    /* 100% of the viewport width */
+    width: 100vw; 
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ==========================================
+   2. Percentage (%) & Root Relative (rem)
+   ========================================== */
+.content-wrapper {
+    /* Takes up 90% width of its parent (body) */
+    width: 90%; 
+    /* Prevents the container from becoming too wide on large screens */
+    max-width: 800px; 
+    /* 2rem = 2 * 16px = 32px top/bottom margin */
+    margin: 2rem auto; 
+}
+
+.card {
+    background: white;
+    /* 1.5rem = 1.5 * 16px = 24px padding */
+    padding: 1.5rem; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    /* 2rem = 32px. Independent of container scaling. */
+    font-size: 2rem; 
+    margin-top: 0;
+}
+
+/* ==========================================
+   3. Parent Relative (em)
+   ========================================== */
+.custom-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+    /* 1.2em is relative to the element's current font-size. 
+       If font-size increases, the padding scales up perfectly. */
+    font-size: 1.2rem; 
+    padding: 0.5em 1.5em; 
+    border-radius: 4px;
+}
+
+.custom-btn:hover {
+    background-color: #c0392b;
+}

@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+    padding: 20px;
+    color: #333;
+}
+h1, h2, h3 {
+    color: coral;
+    background-color: cadetblue;
+}
+
+p{
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: cadetblue;
+}
+*{
+    box-sizing: border-box;
+    background-color: cornsilk;
+}
+.class{
+    color: chartreuse;
+    font-weight: bold;
+}
+#id3{
+    color: crimson;
+    font-style: italic;
+}

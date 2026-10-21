@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Relative Units Demo</title>
+    <!-- Linking the separate CSS file -->
+    <link rel="stylesheet" href="relUnit.css">
+</head>
+<body>
+
+    <!-- 1. Viewport Units (vw / vh) -->
+    <header class="hero-banner">
+        <h1>Welcome to Responsive Sizing</h1>
+        <p>This banner adapts to your screen size.</p>
+    </header>
+
+    <!-- 2. Root Relative (rem) and Percentage (%) -->
+    <main class="content-wrapper">
+        <section class="card">
+            <h2>Understanding em vs rem</h2>
+            <p class="card-text">
+                This card uses <strong>rem</strong> for structural consistency, while the 
+                button below uses <strong>em</strong> to scale proportionally.
+            </p>
+            <!-- 3. Parent Relative (em) -->
+            <button class="custom-btn">Click Me</button>
+        </section>
+    </main>
+
+</body>
+</html>
